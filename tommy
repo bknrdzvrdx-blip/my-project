@@ -1,0 +1,107 @@
+/your-repo
+├── index.html
+├── style.css
+└── script.js
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Yebi Favour</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Hello, I'm Yebi Favour 👋</h1>
+        <p>Welcome to my personal webpage</p>
+    </header>
+
+    <main>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                My name is Yebi Favour. I am passionate about learning new things,
+                improving myself, and using technology to solve problems.
+            </p>
+        </section>
+
+        <section class="skills">
+            <h2>My Skills & Interests</h2>
+            <ul>
+                <li>Learning and self-improvement</li>
+                <li>Communication</li>
+                <li>Technology</li>
+                <li>Problem solving</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Fun Fact</h2>
+            <button onclick="showFact()">Click me</button>
+            <p id="fact"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 | Yebi Favour</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+background-color: #f4f4f4;
+color: #333;
+}
+
+header {
+background-color: #1f2933;
+color: white;
+text-align: center;
+padding: 30px;
+}
+
+main {
+padding: 20px;
+}
+
+section {
+background: white;
+margin-bottom: 20px;
+padding: 20px;
+border-radius: 8px;
+}
+
+h2 {
+color: #1f2933;
+}
+
+button {
+padding: 10px 15px;
+border: none;
+background-color: #1f2933;
+color: white;
+cursor: pointer;
+border-radius: 5px;
+}
+
+button:hover {
+background-color: #374151;
+}
+
+footer {
+text-align: center;
+padding: 10px;
+background-color: #1f2933;
+color: white;
+}
+function showFact() {
+document.getElementById("fact").innerText =
+"I enjoy learning new things and improving every day!";
+}
